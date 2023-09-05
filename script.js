@@ -111,6 +111,9 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+console.log("button clicekd")
+  var charTypes = document.getElementsByName("charTypes");
+  console.log(document.getElementById("uppercase").checked);
   passwordCriteria.pwdLength = document.getElementById("numChar");
   passwordCriteria.characterTypes.lowerCase = document.getElementById("lowercase");
   passwordCriteria.characterTypes.upperCase = document.getElementById("uppercase");
